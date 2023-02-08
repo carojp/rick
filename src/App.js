@@ -17,19 +17,33 @@ function App() {
             How Well Do You Know Rick & Morty?
           </h2>
           <p className="description">
-            Rick and Morty is an American adult animated science-fiction sitcom
-            created by Justin Roiland and Dan Harmon for Cartoon Network's
-            nighttime programming block Adult Swim. The series follows the
-            misadventures of cynical mad scientist Rick Sanchez and his
+            <b>Rick and Morty </b> is an American adult animated science-fiction
+            sitcom created by Justin Roiland and Dan Harmon for Cartoon
+            Network's nighttime programming block Adult Swim. The series follows
+            the misadventures of cynical mad scientist Rick Sanchez and his
             good-hearted but fretful grandson Morty Smith, who split their time
             between domestic life and interdimensional adventures. Though you
             can enjoy Rick and Morty simply as a zany cartoon with some crude
             humor, you can also dive deeper into the human condition and wrestle
-            with the existence of god itself through these characters. So, here
-            you can check them all!
+            with the existence of god itself through these characters.{" "}
+            <b>So, here you can check them all!</b>
           </p>
         </span>
       </section>
+      <ul className="navbar">
+        <li>All Characters</li>
+        <li>Females</li>
+        <li>Males</li>
+        <li>Alive</li>
+        <li>Dead</li>
+        <button className="button-sign">Sign Up</button>
+      </ul>
+      <span className="choose-catergories">
+        <p>
+          Choose any of the catergories above and learn more about Rick and
+          Morty characters
+        </p>
+      </span>
     </div>
   );
 }
