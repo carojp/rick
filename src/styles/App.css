@@ -8,6 +8,7 @@
 
 .title {
   font-size: 22px;
+  font-weight: 700;
 }
 
 .button-about {
@@ -49,12 +50,10 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  list-style: none;
   background-color: #96c96a;
   color: white;
-  margin-top: 0;
-  margin-bottom: 0;
   font-size: 20px;
+  font-weight: 700;
 }
 
 .choose-catergories {

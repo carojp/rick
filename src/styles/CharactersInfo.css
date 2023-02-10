@@ -1,0 +1,33 @@
+.card-info {
+  margin: 20px;
+  background-color: #d7f2f2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 16px;
+}
+
+.character-name {
+  margin: 14px;
+  color: #233160;
+}
+
+.character-image {
+  margin: 0 8px 8px 8px;
+}
+
+.character-info {
+  display: flex;
+  align-items: center;
+}
+
+.character-gender,
+.character-status {
+  background-color: #96c96a;
+  color: #d5fab6;
+  padding: 4px;
+  margin: 4px 10px 14px 10px;
+  font-size: 14px;
+  font-weight: 200;
+  border-radius: 8px;
+}
