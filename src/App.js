@@ -1,7 +1,17 @@
+import axios from "axios";
 import "./styles/App.css";
 import imageSerie from "./assets/imageSerie.png";
+import { useEffect } from "react";
 
 function App() {
+  const api = "https://rickandmortyapi.com/api/character";
+
+  useEffect(() => {
+    axios.get(api).then((response) => {
+      console.log("Hola Rick & Morty");
+    });
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -43,6 +53,30 @@ function App() {
           Choose any of the catergories above and learn more about Rick and
           Morty characters
         </p>
+      </span>
+      <span className="footer">
+        <ul>
+          <h2 className="footer-title"> Kartik Bansal.</h2>
+          <li>Create Designer & frond-end</li>
+          <li>developer</li>
+        </ul>
+        <ul>
+          <h2 className="footer-title"> Useful Links</h2>
+          <li>Home</li>
+          <li>About</li>
+          <li>Experience</li>
+          <li>Contac</li>
+        </ul>
+        <ul>
+          <h2 className="footer-title"> Social Media</h2>
+          <li>Linkedin</li>
+          <li>Github</li>
+          <li>Instragram</li>
+        </ul>
+        <ul>
+          <h2 className="footer-title"> Hire Me</h2>
+          <li>Visit my Linkedin accounr!</li>
+        </ul>
       </span>
     </div>
   );

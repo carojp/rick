@@ -7,6 +7,7 @@
 }
 
 .title {
+  font-size: 22px;
 }
 
 .button-about {
@@ -34,12 +35,14 @@
 
 .title-description {
   font-size: 24px;
+  color: #233160;
 }
 
 .description {
   font-size: 18px;
   line-height: 1.6;
   font-weight: 200;
+  color: #233160;
 }
 
 .navbar {
@@ -80,4 +83,24 @@
   font-weight: 200;
   font-size: 30px;
   text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #96c96a;
+}
+
+.footer li:nth-last-child(n) {
+  list-style: none;
+  color: white;
+  margin-bottom: 12px;
+  font-weight: 200;
+  font-size: 22px;
+}
+
+.footer-title {
+  font-size: 32px;
+  color: white;
+  font-weight: 700;
 }
