@@ -11,13 +11,12 @@
 }
 
 .button-about {
-  width: 100px;
-  height: 20px;
   color: #233160;
   background: #d7f2f2;
   border: 2px solid #d7f2f2;
   border-radius: 6px;
   font-size: 16px;
+  font-weight: 700;
 }
 
 .description-series {
@@ -56,17 +55,6 @@
   margin-top: 0;
   margin-bottom: 0;
   font-size: 20px;
-}
-
-.button-sign {
-  width: 132px;
-  height: 32px;
-  background: white;
-  border: 2px solid #5551ff;
-  border-radius: 6px;
-  color: #5551ff;
-  font-size: 18px;
-  font-weight: 600;
 }
 
 .choose-catergories {

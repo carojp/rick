@@ -40,14 +40,13 @@ function App() {
           </p>
         </span>
       </section>
-      <ul className="navbar">
-        <li>All Characters</li>
-        <li>Females</li>
-        <li>Males</li>
-        <li>Alive</li>
-        <li>Dead</li>
-        <button className="button-sign">Sign Up</button>
-      </ul>
+      <nav className="navbar">
+        <a href={"http://localhost:3000/characters"}>All Characters</a>
+        <a href={"http://localhost:3000/characters/females"}>Females</a>
+        <a href={"http://localhost:3000/characters/males"}>Males</a>
+        <a href={"http://localhost:3000/characters/alive"}>Alive</a>
+        <a href={"http://localhost:3000/characters/alive"}>Dead</a>
+      </nav>
       <span className="choose-catergories">
         <p>
           Choose any of the catergories above and learn more about Rick and
