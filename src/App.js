@@ -1,7 +1,5 @@
-import axios from "axios";
 import "./styles/App.css";
 import imageSerie from "./assets/imageSerie.png";
-import { useEffect } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CharactersInfo from "./CharactersInfo";
 import Home from "./Home";
@@ -36,14 +34,6 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const api = "https://rickandmortyapi.com/api/character";
-
-  useEffect(() => {
-    axios.get(api).then((response) => {
-      console.log("Hola Rick & Morty");
-    });
-  }, []);
-
   return (
     <div className="App">
       <header className="App-header">
