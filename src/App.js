@@ -2,6 +2,38 @@ import axios from "axios";
 import "./styles/App.css";
 import imageSerie from "./assets/imageSerie.png";
 import { useEffect } from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import CharactersInfo from "./CharactersInfo";
+import Home from "./Home";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/characters",
+    element: <CharactersInfo />,
+    children: [
+      {
+        path: "females",
+        element: <CharactersInfo />,
+      },
+      {
+        path: "males",
+        element: <CharactersInfo />,
+      },
+      {
+        path: "alive",
+        element: <CharactersInfo />,
+      },
+      {
+        path: "dead",
+        element: <CharactersInfo />,
+      },
+    ],
+  },
+]);
 
 function App() {
   const api = "https://rickandmortyapi.com/api/character";
@@ -35,7 +67,7 @@ function App() {
             between domestic life and interdimensional adventures. Though you
             can enjoy Rick and Morty simply as a zany cartoon with some crude
             humor, you can also dive deeper into the human condition and wrestle
-            with the existence of god itself through these characters.{" "}
+            with the existence of god itself through these characters.
             <b>So, here you can check them all!</b>
           </p>
         </span>
@@ -47,12 +79,7 @@ function App() {
         <a href={"http://localhost:3000/characters/alive"}>Alive</a>
         <a href={"http://localhost:3000/characters/alive"}>Dead</a>
       </nav>
-      <span className="choose-catergories">
-        <p>
-          Choose any of the catergories above and learn more about Rick and
-          Morty characters
-        </p>
-      </span>
+      <RouterProvider router={router} />
       <span className="footer">
         <ul>
           <h2 className="footer-title"> Kartik Bansal.</h2>

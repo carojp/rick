@@ -51,25 +51,12 @@
   align-items: center;
   justify-content: space-evenly;
   background-color: #96c96a;
-  color: white;
   font-size: 20px;
   font-weight: 700;
 }
 
-.choose-catergories {
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #72c7d0;
-}
-
-.choose-catergories p:nth-last-child(n) {
-  width: 550px;
-  color: white;
-  font-weight: 200;
-  font-size: 30px;
-  text-align: center;
+.navbar a:nth-last-child(n):visited {
+  text-decoration: none;
 }
 
 .footer {
@@ -83,11 +70,11 @@
   color: white;
   margin-bottom: 12px;
   font-weight: 200;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .footer-title {
-  font-size: 32px;
+  font-size: 26px;
   color: white;
   font-weight: 700;
 }

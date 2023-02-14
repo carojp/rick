@@ -1,0 +1,15 @@
+.choose-catergories {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #72c7d0;
+}
+
+.choose-catergories p:nth-last-child(n) {
+  width: 550px;
+  color: white;
+  font-weight: 200;
+  font-size: 30px;
+  text-align: center;
+}
