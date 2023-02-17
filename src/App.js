@@ -1,7 +1,7 @@
 import "./styles/App.css";
 import imageSerie from "./assets/imageSerie.png";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import CharactersInfo from "./CharactersInfo";
+import CharactersList from "./CharactersList";
 import Home from "./Home";
 
 const router = createBrowserRouter([
@@ -11,23 +11,23 @@ const router = createBrowserRouter([
   },
   {
     path: "/characters",
-    element: <CharactersInfo />,
+    element: <CharactersList />,
     children: [
       {
         path: "females",
-        element: <CharactersInfo />,
+        element: <CharactersList />,
       },
       {
         path: "males",
-        element: <CharactersInfo />,
+        element: <CharactersList />,
       },
       {
         path: "alive",
-        element: <CharactersInfo />,
+        element: <CharactersList />,
       },
       {
         path: "dead",
-        element: <CharactersInfo />,
+        element: <CharactersList />,
       },
     ],
   },
@@ -67,7 +67,7 @@ function App() {
         <a href={"http://localhost:3000/characters/females"}>Females</a>
         <a href={"http://localhost:3000/characters/males"}>Males</a>
         <a href={"http://localhost:3000/characters/alive"}>Alive</a>
-        <a href={"http://localhost:3000/characters/alive"}>Dead</a>
+        <a href={"http://localhost:3000/characters/dead"}>Dead</a>
       </nav>
       <RouterProvider router={router} />
       <span className="footer">

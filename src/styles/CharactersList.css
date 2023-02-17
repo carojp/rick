@@ -22,6 +22,7 @@
 .character-image {
   width: 250px;
   margin: 0 8px 8px 8px;
+  border-radius: 8px;
 }
 
 .character-info {
