@@ -1,0 +1,17 @@
+.navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #96c96a;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navbar-menu:link {
+  text-decoration: none;
+}
+
+.navbar-menu:visited {
+  color: white;
+}

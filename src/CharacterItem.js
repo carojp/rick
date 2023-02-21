@@ -1,41 +1,15 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import "./styles/CharacterItem.css";
 
-function CharacterItem() {
-  const [page, SetPage] = useState(1);
-  const [character, setCharacter] = useState({
-    results: [
-      {
-        id: "",
-        name: "",
-        status: "",
-        species: "",
-        gender: "",
-      },
-    ],
-  });
-
-  useEffect(() => {
-    axios
-      .get(`https://rickandmortyapi.com/api/character?pege=${page}`)
-      .then((response) => {
-        setCharacter(response.data);
-      });
-  }, []);
-
+function CharacterItem({ character }) {
   return (
     <section className="card">
       <div className="card-info">
-        <h2 className="character-name">{character.results[0].name}</h2>
-        <img
-          className="character-image"
-          src={character.results[0].image}
-          alt=""
-        />
+        <h2 className="character-name">{character.name}</h2>
+        <img className="character-image" src={character.image} alt="" />
         <div className="character-info">
-          <h2 className="character-status">{character.results[0].status}</h2>
-          <h2 className="character-gender">{character.results[0].species}</h2>
-          <h2 className="character-gender">{character.results[0].gender}</h2>
+          <h2 className="character-status">{character.status}</h2>
+          <h2 className="character-gender">{character.species}</h2>
+          <h2 className="character-gender">{character.gender}</h2>
         </div>
       </div>
     </section>

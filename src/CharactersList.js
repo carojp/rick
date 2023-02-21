@@ -4,29 +4,23 @@ import CharacterItem from "./CharacterItem";
 import "./styles/CharactersList.css";
 
 function CharactersList() {
-  const [page, SetPage] = useState(1);
+  const [page] = useState(1);
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
     axios
-      .get(`https://rickandmortyapi.com/api/character?pege=${page}`)
+      .get(`https://rickandmortyapi.com/api/character?page=${page}`)
       .then((response) => {
-        setCharacters(response.data);
+        setCharacters(response.data.results);
       });
   }, []);
 
   return (
-    <>
+    <section className="card">
       {characters.map((character) => (
-        <CharacterItem
-          key={character.id}
-          name={character.name}
-          status={character.status}
-          species={character.species}
-          gender={character.gender}
-        />
+        <CharacterItem key={character.id} character={character} />
       ))}
-    </>
+    </section>
   );
 }
 
