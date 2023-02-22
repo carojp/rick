@@ -2,7 +2,7 @@ import "./styles/CharacterItem.css";
 
 function CharacterItem({ character }) {
   return (
-    <section className="card">
+    <section className="card-item">
       <div className="card-info">
         <h2 className="character-name">{character.name}</h2>
         <img className="character-image" src={character.image} alt="" />

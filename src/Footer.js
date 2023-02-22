@@ -5,9 +5,8 @@ function Footer() {
     <>
       <span className="footer">
         <ul>
-          <h2 className="footer-title"> Kartik Bansal.</h2>
-          <li>Create Designer & frond-end</li>
-          <li>developer</li>
+          <h2 className="footer-title">Carolina Jaramillo</h2>
+          <li>Frontend developer</li>
         </ul>
         <ul>
           <h2 className="footer-title"> Useful Links</h2>
