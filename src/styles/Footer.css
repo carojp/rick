@@ -5,6 +5,7 @@
 }
 
 .footer li:nth-last-child(n) {
+  font-family: "Work Sans";
   list-style: none;
   color: white;
   margin-bottom: 12px;
@@ -13,6 +14,7 @@
 }
 
 .footer-title {
+  font-family: "Poppins";
   font-size: 26px;
   color: white;
   font-weight: 700;
