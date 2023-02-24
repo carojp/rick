@@ -12,25 +12,43 @@ const router = createBrowserRouter([
   },
   {
     path: "/characters",
-    element: <CharactersList />,
-    children: [
-      {
-        path: "females",
-        element: <CharactersList />,
-      },
-      {
-        path: "males",
-        element: <CharactersList />,
-      },
-      {
-        path: "alive",
-        element: <CharactersList />,
-      },
-      {
-        path: "dead",
-        element: <CharactersList />,
-      },
-    ],
+    element: (
+      <CharactersList
+        urlInitial={"https://rickandmortyapi.com/api/character"}
+      />
+    ),
+  },
+  {
+    path: "/characters/females",
+    element: (
+      <CharactersList
+        urlInitial={"https://rickandmortyapi.com/api/character/?gener=Female"}
+      />
+    ),
+  },
+  {
+    path: "/characters/males",
+    element: (
+      <CharactersList
+        urlInitial={"https://rickandmortyapi.com/api/character/?gender=Male"}
+      />
+    ),
+  },
+  {
+    path: "/characters/alive",
+    element: (
+      <CharactersList
+        urlInitial={"https://rickandmortyapi.com/api/character/?status=Alive"}
+      />
+    ),
+  },
+  {
+    path: "/characters/dead",
+    element: (
+      <CharactersList
+        urlInitial={"https://rickandmortyapi.com/api/character/?status=Dead"}
+      />
+    ),
   },
 ]);
 

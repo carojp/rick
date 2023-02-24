@@ -5,9 +5,7 @@ import menor from "./assets/menor.png";
 import mayor from "./assets/mayor.png";
 import "./styles/CharactersList.css";
 
-function CharactersList() {
-  const urlInitial = "https://rickandmortyapi.com/api/character?page=1";
-
+function CharactersList(urlInitial) {
   const [initial, setInitial] = useState(urlInitial);
   const [prev, setPrev] = useState(null);
   const [next, setNext] = useState(null);
@@ -29,11 +27,13 @@ function CharactersList() {
           className="img-menor"
           src={menor}
           onClick={() => setInitial(prev)}
+          alt=""
         />
         <img
           className="img-mayor"
           src={mayor}
           onClick={() => setInitial(next)}
+          alt=""
         />
       </div>
       <section className="card-list">
