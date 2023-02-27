@@ -22,7 +22,7 @@ const router = createBrowserRouter([
     path: "/characters/females",
     element: (
       <CharactersList
-        urlInitial={"https://rickandmortyapi.com/api/character/?gener=Female"}
+        urlInitial={"https://rickandmortyapi.com/api/character/?gender=Female"}
       />
     ),
   },

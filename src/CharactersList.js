@@ -5,7 +5,7 @@ import menor from "./assets/menor.png";
 import mayor from "./assets/mayor.png";
 import "./styles/CharactersList.css";
 
-function CharactersList(urlInitial) {
+function CharactersList({ urlInitial }) {
   const [initial, setInitial] = useState(urlInitial);
   const [prev, setPrev] = useState(null);
   const [next, setNext] = useState(null);
@@ -46,13 +46,3 @@ function CharactersList(urlInitial) {
 }
 
 export default CharactersList;
-
-/* 
-      <div className="button">
-        <button disabled={prev === null ? true : false} className="button-prev">
-          Prev
-        </button>
-        <button disabled={next === null ? true : false} className="button-next">
-          Next
-        </button>
-      </div>; */
