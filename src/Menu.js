@@ -1,12 +1,13 @@
+import { NavLink } from "react-router-dom";
 import "./styles/Menu.css";
 
 function Menu() {
   return (
     <>
       <nav className="navbar">
-        <a className="navbar-menu" href={"http://localhost:3000/characters"}>
+        <NavLink className="navbar-menu" to={"/characters"}>
           All Characters
-        </a>
+        </NavLink>
         <a
           className="navbar-menu"
           href={"http://localhost:3000/characters/females"}
