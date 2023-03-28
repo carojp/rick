@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/rick/static/css/main.99af9235.css",
+    "main.js": "/rick/static/js/main.a0261ee6.js",
+    "static/media/imageSerie.png": "/rick/static/media/imageSerie.70d4d93de0882f331f8c.png",
+    "index.html": "/rick/index.html",
+    "main.99af9235.css.map": "/rick/static/css/main.99af9235.css.map",
+    "main.a0261ee6.js.map": "/rick/static/js/main.a0261ee6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99af9235.css",
+    "static/js/main.a0261ee6.js"
+  ]
+}
