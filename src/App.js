@@ -3,7 +3,6 @@ import CharactersList from "./CharactersList";
 import Footer from "./Footer";
 import Header from "./Header";
 import Home from "./Home";
-import Menu from "./Menu";
 
 const router = createHashRouter([
   {
@@ -56,7 +55,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Menu />
       <RouterProvider router={router} />
       <Footer />
     </div>

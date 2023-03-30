@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import CharacterItem from "./CharacterItem";
+import Menu from "./Menu";
 import menor from "./assets/menor.png";
 import mayor from "./assets/mayor.png";
 import "./styles/CharactersList.css";
@@ -21,27 +22,30 @@ function CharactersList({ urlInitial }) {
   }, [initial]);
 
   return (
-    <section className="conteiner-card-list">
-      <div className="arrow">
-        <img
-          className="img-menor"
-          src={menor}
-          onClick={() => setInitial(prev)}
-          alt=""
-        />
-        <img
-          className="img-mayor"
-          src={mayor}
-          onClick={() => setInitial(next)}
-          alt=""
-        />
-      </div>
-      <section className="card-list">
-        {characters.map((character) => (
-          <CharacterItem key={character.id} character={character} />
-        ))}
+    <>
+      <Menu />
+      <section className="conteiner-card-list">
+        <div className="arrow">
+          <img
+            className="img-menor"
+            src={menor}
+            onClick={() => setInitial(prev)}
+            alt=""
+          />
+          <img
+            className="img-mayor"
+            src={mayor}
+            onClick={() => setInitial(next)}
+            alt=""
+          />
+        </div>
+        <section className="card-list">
+          {characters.map((character) => (
+            <CharacterItem key={character.id} character={character} />
+          ))}
+        </section>
       </section>
-    </section>
+    </>
   );
 }
 

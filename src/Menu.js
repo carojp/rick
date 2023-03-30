@@ -8,30 +8,18 @@ function Menu() {
         <NavLink className="navbar-menu" to={"/characters"}>
           All Characters
         </NavLink>
-        <a
-          className="navbar-menu"
-          href={"http://localhost:3000/characters/females"}
-        >
+        <NavLink className="navbar-menu" to={"/characters/females"}>
           Females
-        </a>
-        <a
-          className="navbar-menu"
-          href={"http://localhost:3000/characters/males"}
-        >
+        </NavLink>
+        <NavLink className="navbar-menu" to={"/characters/males"}>
           Males
-        </a>
-        <a
-          className="navbar-menu"
-          href={"http://localhost:3000/characters/alive"}
-        >
+        </NavLink>
+        <NavLink className="navbar-menu" to={"/characters/alive"}>
           Alive
-        </a>
-        <a
-          className="navbar-menu"
-          href={"http://localhost:3000/characters/dead"}
-        >
+        </NavLink>
+        <NavLink className="navbar-menu" to={"/characters/dead"}>
           Dead
-        </a>
+        </NavLink>
       </nav>
     </>
   );
