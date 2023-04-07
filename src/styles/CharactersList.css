@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.button-img-menor {
+.button-prev {
   margin: 12px 50px 12px 12px;
   background-color: #d7f2f2;
   border-color: white;
@@ -15,9 +15,10 @@
   font-weight: 200;
   border-radius: 8px;
   text-align: center;
+  padding: 0 8px;
 }
 
-.button-img-mayor {
+.button-next {
   margin: 12px 12px 12px 50px;
   background-color: #d7f2f2;
   border-color: white;
@@ -25,6 +26,7 @@
   font-weight: 200;
   border-radius: 8px;
   text-align: center;
+  padding: 0 8px;
 }
 
 .card-list {
@@ -37,9 +39,4 @@
 .button {
   display: flex;
   justify-content: center;
-}
-
-.button-prev,
-.button-next {
-  margin: 8px;
 }

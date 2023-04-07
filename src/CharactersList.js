@@ -2,8 +2,6 @@ import axios from "axios";
 import { useEffect, useState, useContext } from "react";
 import CharacterItem from "./CharacterItem";
 import Menu from "./Menu";
-import menor from "./assets/menor.png";
-import mayor from "./assets/mayor.png";
 import "./styles/CharactersList.css";
 import UrlContext from "./context/UrlContext";
 
@@ -37,13 +35,13 @@ function CharactersList({ urlInitial }) {
       <section className="conteiner-card-list">
         <div className="arrow">
           <button
-            className="button-img-menor"
+            className="button-prev"
             disabled={prev === null}
             onClick={() => setInitial(prev)}
           >
             Prev
           </button>
-          <button className="button-img-mayor" onClick={() => setInitial(next)}>
+          <button className="button-next" onClick={() => setInitial(next)}>
             Next
           </button>
         </div>
