@@ -38,6 +38,7 @@ function CharactersList({ urlInitial }) {
         <div className="arrow">
           <img
             className="img-menor"
+            disabled={prev == null}
             src={menor}
             onClick={() => setInitial(prev)}
             alt=""
