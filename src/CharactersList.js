@@ -36,19 +36,16 @@ function CharactersList({ urlInitial }) {
       <Menu />
       <section className="conteiner-card-list">
         <div className="arrow">
-          <img
-            className="img-menor"
-            disabled={prev == null}
-            src={menor}
+          <button
+            className="button-img-menor"
+            disabled={prev === null}
             onClick={() => setInitial(prev)}
-            alt=""
-          />
-          <img
-            className="img-mayor"
-            src={mayor}
-            onClick={() => setInitial(next)}
-            alt=""
-          />
+          >
+            Prev
+          </button>
+          <button className="button-img-mayor" onClick={() => setInitial(next)}>
+            Next
+          </button>
         </div>
         <section className="card-list">
           {characters.map((character) => (
