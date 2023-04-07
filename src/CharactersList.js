@@ -1,12 +1,14 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import CharacterItem from "./CharacterItem";
 import Menu from "./Menu";
 import menor from "./assets/menor.png";
 import mayor from "./assets/mayor.png";
 import "./styles/CharactersList.css";
+import UrlContext from "./context/UrlContext";
 
 function CharactersList({ urlInitial }) {
+  const { url } = useContext(UrlContext);
   const [initial, setInitial] = useState(urlInitial);
   const [prev, setPrev] = useState(null);
   const [next, setNext] = useState(null);
@@ -20,6 +22,14 @@ function CharactersList({ urlInitial }) {
       setNext(response.data.info.next);
     });
   }, [initial]);
+
+  useEffect(() => {
+    axios.get(url).then((response) => {
+      setCharacters(response.data.results);
+      setPrev(response.data.info.prev);
+      setNext(response.data.info.next);
+    });
+  }, [url]);
 
   return (
     <>
